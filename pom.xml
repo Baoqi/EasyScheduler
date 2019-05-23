@@ -18,6 +18,7 @@
 		<logback.version>1.2.3</logback.version>
 		<hadoop.version>2.7.3</hadoop.version>
 		<quartz.version>2.2.3</quartz.version>
+		<streamsets.version>3.8.2</streamsets.version>
 	</properties>
 
 	<dependencyManagement>
@@ -381,6 +382,27 @@
 				<groupId>com.microsoft.sqlserver</groupId>
 				<artifactId>mssql-jdbc</artifactId>
 				<version>6.1.0.jre8</version>
+			</dependency>
+
+			<dependency>
+				<groupId>com.streamsets</groupId>
+				<artifactId>streamsets-datacollector-api</artifactId>
+				<version>${streamsets.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.streamsets</groupId>
+				<artifactId>streamsets-datacollector-sdk</artifactId>
+				<version>${streamsets.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.streamsets</groupId>
+				<artifactId>streamsets-datacollector-container</artifactId>
+				<version>${streamsets.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.streamsets</groupId>
+				<artifactId>streamsets-datacollector-container-common</artifactId>
+				<version>${streamsets.version}</version>
 			</dependency>
 
 		</dependencies>

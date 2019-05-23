@@ -455,5 +455,12 @@ export default {
   'Post Statement': '后置sql',
   'Statement cannot be empty': '语句不能为空',
   'Process Define Count': '流程定义个数',
-  'Process Instance Running Count': '运行流程实例个数'
+  'Process Instance Running Count': '运行流程实例个数',
+  'Source Stage': '来源阶段',
+  'Processor Stage': '处理阶段',
+  'Target Stage': '目标阶段',
+  'Parameter Group': '参数组',
+  'Parameter Name': '参数名称',
+  'Parameter Type': '参数类型',
+  'Parameter Value': '值'
 }

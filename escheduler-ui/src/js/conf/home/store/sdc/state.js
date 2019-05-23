@@ -14,22 +14,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package cn.escheduler.common.enums;
 
-/**
- * task node type
- */
-public enum TaskType {
-    /**
-     * 0 SHELL
-     * 1 SQL
-     * 2 SUB_PROCESS
-     * 3 PROCEDURE
-     * 4 MR
-     * 5 SPARK
-     * 6 PYTHON
-     * 7 DEPENDENT
-     * 8 SDC (StreamSets Data Collector)
-     */
-    SHELL,SQL, SUB_PROCESS,PROCEDURE,MR,SPARK,PYTHON,DEPENDENT,SDC
+export default {
+  stageListAll: []
 }

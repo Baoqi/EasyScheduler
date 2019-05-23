@@ -159,6 +159,14 @@
                 ref="DEPENDENT"
                 :backfill-item="backfillItem">
         </m-dependent>
+        <!-- sdc node -->
+        <m-sdc
+          v-if="taskType === 'SDC'"
+          @on-params="_onParams"
+          ref="SDC"
+          :create-node-id="id"
+          :backfill-item="backfillItem">
+        </m-sdc>
 
       </div>
     </div>
@@ -183,6 +191,7 @@
   import mProcedure from './tasks/procedure'
   import mDependent from './tasks/dependent'
   import mSubProcess from './tasks/sub_process'
+  import mSdc from './tasks/sdc'
   import mSelectInput from './_source/selectInput'
   import mTimeoutAlarm from './_source/timeoutAlarm'
   import mWorkerGroups from './_source/workerGroups'
@@ -457,6 +466,7 @@
       mSpark,
       mPython,
       mDependent,
+      mSdc,
       mSelectInput,
       mTimeoutAlarm,
       mPriority,

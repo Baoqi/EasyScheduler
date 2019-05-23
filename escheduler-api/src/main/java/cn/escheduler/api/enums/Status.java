@@ -230,6 +230,8 @@ public enum Status {
 
     QUEUE_COUNT_ERROR(90001,"queue count error"),
 
+    SDC_LOAD_PLUGIN_ERROR(190001, "retrieve plugin list error"),
+
     ;
 
     private int code;

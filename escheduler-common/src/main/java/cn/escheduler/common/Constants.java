@@ -458,6 +458,10 @@ public final class Constants {
 
     public static final String STATUS = "status";
 
+    /**
+     * SDC plugin configuration path
+     */
+    public static final String SDC_PLUGIN_PATH = "sdc.plugin.path";
 
     /**
      * command parameter keys

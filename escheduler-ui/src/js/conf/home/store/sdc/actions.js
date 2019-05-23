@@ -14,22 +14,19 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package cn.escheduler.common.enums;
 
-/**
- * task node type
- */
-public enum TaskType {
-    /**
-     * 0 SHELL
-     * 1 SQL
-     * 2 SUB_PROCESS
-     * 3 PROCEDURE
-     * 4 MR
-     * 5 SPARK
-     * 6 PYTHON
-     * 7 DEPENDENT
-     * 8 SDC (StreamSets Data Collector)
-     */
-    SHELL,SQL, SUB_PROCESS,PROCEDURE,MR,SPARK,PYTHON,DEPENDENT,SDC
+import io from '@/module/io'
+
+export default {
+  getAllStages ({ state }, payload) {
+    return new Promise((resolve, reject) => {
+      io.get(`sdc/list-stages`, payload, res => {
+        let list = res.data
+        state.stageListAll = list
+        resolve(list)
+      }).catch(e => {
+      reject(e)
+    })
+  })
+  }
 }

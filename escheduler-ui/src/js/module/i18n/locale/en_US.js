@@ -455,5 +455,12 @@ export default {
   'Post Statement': 'Post Statement',
   'Statement cannot be empty': 'Statement cannot be empty',
   'Process Define Count': 'Process Define Count',
-  'Process Instance Running Count': 'Process Instance Running Count'
+  'Process Instance Running Count': 'Process Instance Running Count',
+  'Source Stage': 'Source Stage',
+  'Processor Stage': 'Processor Stage',
+  'Target Stage': 'Target Stage',
+  'Parameter Group': 'Parameter Group',
+  'Parameter Name': 'Parameter Name',
+  'Parameter Type': 'Parameter Type',
+  'Parameter Value': 'Parameter Value'
 }

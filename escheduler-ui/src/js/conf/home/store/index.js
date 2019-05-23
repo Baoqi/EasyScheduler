@@ -23,6 +23,7 @@ import security from './security'
 import datasource from './datasource'
 import user from './user'
 import monitor from './monitor'
+import sdc from './sdc'
 
 export default new Vuex.Store({
   modules: {
@@ -32,6 +33,7 @@ export default new Vuex.Store({
     security,
     datasource,
     user,
-    monitor
+    monitor,
+    sdc
   }
 })

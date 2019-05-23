@@ -22,6 +22,7 @@ import cn.escheduler.server.worker.task.dependent.DependentTask;
 import cn.escheduler.server.worker.task.mr.MapReduceTask;
 import cn.escheduler.server.worker.task.processdure.ProcedureTask;
 import cn.escheduler.server.worker.task.python.PythonTask;
+import cn.escheduler.server.worker.task.sdc.SdcTask;
 import cn.escheduler.server.worker.task.shell.ShellTask;
 import cn.escheduler.server.worker.task.spark.SparkTask;
 import cn.escheduler.server.worker.task.sql.SqlTask;
@@ -59,6 +60,8 @@ public class TaskManager {
         return new PythonTask(props, logger);
       case DEPENDENT:
         return new DependentTask(props, logger);
+      case SDC:
+        return new SdcTask(props, logger);
       default:
         logger.error("unsupport task type: {}", taskType);
         throw new IllegalArgumentException("not support task type");

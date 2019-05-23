@@ -22,6 +22,7 @@ import cn.escheduler.common.task.dependent.DependentParameters;
 import cn.escheduler.common.task.mr.MapreduceParameters;
 import cn.escheduler.common.task.procedure.ProcedureParameters;
 import cn.escheduler.common.task.python.PythonParameters;
+import cn.escheduler.common.task.sdc.SdcParameters;
 import cn.escheduler.common.task.shell.ShellParameters;
 import cn.escheduler.common.task.spark.SparkParameters;
 import cn.escheduler.common.task.sql.SqlParameters;
@@ -63,6 +64,8 @@ public class TaskParametersUtils {
           return JSONUtils.parseObject(parameter, PythonParameters.class);
         case DEPENDENT:
           return JSONUtils.parseObject(parameter, DependentParameters.class);
+        case SDC:
+          return JSONUtils.parseObject(parameter, SdcParameters.class);
         default:
           return null;
       }
